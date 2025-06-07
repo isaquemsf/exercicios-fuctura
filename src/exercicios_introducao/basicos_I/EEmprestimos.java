@@ -16,7 +16,7 @@ public class EEmprestimos {
         double valorParcela = valorEmprestimo / meses;
         double valorTaxaEmReal = valorParcela * taxaJurosMes;
         double parcelaComTaxa = valorParcela + valorTaxaEmReal;
-        
+
         System.out.println("------------------------------------------");
         System.out.println("TAXA MENSAL: " + (taxaJurosMes * 100) + "%");
         System.out.printf("VALOR DO EMPRESTIMO: R$%.2f%n", valorEmprestimo);
@@ -24,5 +24,7 @@ public class EEmprestimos {
         System.out.printf("VALOR DA PARCELA (SEM TAXA): R$%.2f%n", valorParcela);
         System.out.printf("VALOR DA TAXA (EM R$): R$%.2f%n", valorTaxaEmReal);
         System.out.printf("VALOR TOTAL DA PARCELA: R$%.2f", parcelaComTaxa);
+
+        System.out.println("testando commit2");
     }
 }
