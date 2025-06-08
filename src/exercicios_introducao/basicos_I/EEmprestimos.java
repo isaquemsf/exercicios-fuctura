@@ -25,6 +25,5 @@ public class EEmprestimos {
         System.out.printf("VALOR DA TAXA (EM R$): R$%.2f%n", valorTaxaEmReal);
         System.out.printf("VALOR TOTAL DA PARCELA: R$%.2f", parcelaComTaxa);
 
-        System.out.println("testando commit2");
     }
 }
