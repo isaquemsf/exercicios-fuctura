@@ -47,7 +47,7 @@ public class CConversorMedidas {
                     }
                     case "KM" -> {
                         double centimetrosToKM = centimetros / 100000;
-                        System.out.printf("%.1f metros equivalem a %.1f quilômetros.", centimetros, centimetrosToKM);
+                        System.out.printf("%.1f metros equivalem a %.4f quilômetros.", centimetros, centimetrosToKM);
                     }
                     default -> System.out.println("Insira uma opção válida.");
                 }
