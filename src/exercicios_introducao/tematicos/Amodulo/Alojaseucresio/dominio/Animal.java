@@ -6,10 +6,6 @@ public class Animal {
     private int idade;
     private double gramasRacao;
 
-    public Animal(String especie) {
-        this.especie = especie;
-    }
-
     public void imprimeRelatorio() {
         System.out.println("ESPÉCIE DO ANIMAL: " + especie);
         System.out.println("NOME DO ANIMAL: " + nome);

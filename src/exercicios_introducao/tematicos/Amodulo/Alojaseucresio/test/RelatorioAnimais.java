@@ -2,6 +2,8 @@ package exercicios_introducao.tematicos.Amodulo.Alojaseucresio.test;
 
 import exercicios_introducao.tematicos.Amodulo.Alojaseucresio.dominio.Animal;
 
+import java.util.Scanner;
+
 public class RelatorioAnimais {
     public static void main(String[] args) {
 
@@ -9,22 +11,37 @@ public class RelatorioAnimais {
           o nome de cada animal, sua espécie e idade em anos. Além disso, ele quer saber quanto cada um dos animais
           come em gramas de ração por dia.
           Crie variáveis para armazenar essas informações e exiba tudo de maneira organizada para Seu Creso revisar. */
+        Scanner scanner = new Scanner(System.in);
 
-        Animal animal1 = new Animal("Cachorro");
-        Animal animal2 = new Animal("Gato");
-        Animal animal3 = new Animal("Papagaio");
+        Animal animal1 = new Animal();
+        Animal animal2 = new Animal();
+        Animal animal3 = new Animal();
 
-        animal1.setNome("Bob");
-        animal1.setIdade(1);
-        animal1.setGramasRacao(150);
+        Animal[] animais = {animal1, animal2, animal3};
 
-        animal2.setNome("Fred");
-        animal2.setIdade(2);
-        animal2.setGramasRacao(100);
+        System.out.println("--------------------------------------");
+        System.out.println("   BEM-VINDO AO CADASTRO DE ANIMAIS   ");
+        System.out.println("--------------------------------------");
+        System.out.println();
 
-        animal3.setNome("Blue");
-        animal3.setIdade(5);
-        animal3.setGramasRacao(50);
+        for (Animal animal : animais) {
+            System.out.println("Informe a espécie do animal:");
+            String especieAnimal = scanner.next();
+            animal.setEspecie(especieAnimal);
+
+            System.out.println("Informe o nome do animal:");
+            String nomeAnimal = scanner.next();
+            animal.setNome(nomeAnimal);
+
+            System.out.println("Informe a idade do animal:");
+            int idadeAnimal = scanner.nextInt();
+            animal.setIdade(idadeAnimal);
+
+            System.out.println("Informe a quantidade (em gramas) de ração que o animal consome diariamente:");
+            double gramasRacaoAnimal = scanner.nextDouble();
+            animal.setGramasRacao(gramasRacaoAnimal);
+            System.out.println();
+        }
 
         System.out.println("--------------------------------------");
         System.out.println("              RELATÓRIO               ");
