@@ -16,7 +16,14 @@ public class PedraPapelTesoura {
         String mensagem = "";
 
         while (partidas <= 3) {
-            System.out.println("Selecione sua jogada:\n1. PEDRA | 2.PAPEL | 3.TESOURA");
+            System.out.println("""
+                    ---------- MENU ----------
+                       Selecione a sua jogada:
+                             1. PEDRA
+                             2. PAPEL
+                             3. TESOURA
+                    --------------------------
+                    """);
             int decisaoJogador = scanner.nextInt();
 
             switch (decisaoJogador) {
